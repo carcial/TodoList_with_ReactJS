@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(49, 46, 46);
+}
+
+.main-section {
+    min-width: 700px;
+    min-height: auto;
+    background-color: white;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    background-image: linear-gradient(to right top, rgb(54, 54, 233), rgb(226, 24, 24));
+    background-size: 400%;
+    color: rgb(247, 240, 240);
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    width: 105px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-radius: 18px;
+    border: 1px solid gray;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.task .edit-input {
+    font-family: cursive;
+    color: black;
+    border: 1px solid blue;
+    border-radius: 0px;
+}
+
+.selectAll-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.select-button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    background-image: linear-gradient(to right top, rgb(7, 130, 55), rgb(92, 5, 5));
+    background-size: 400%;
+    color: rgb(247, 240, 240);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 105px;
+}
+
+.deleteAll-selected {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    background-image: linear-gradient(to right top, rgb(148, 12, 66), rgb(226, 24, 24));
+    background-size: 400%;
+    color: rgb(247, 240, 240);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 105px;
+}
+
+.display-container {
+    margin: 15px;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.singleTask {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.delete-button {
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    cursor: pointer;
+}
+
+.button-react-icons {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.task-container .task {
+    font-family: cursive;
+    overflow-wrap: break-word;
+    max-width: 300px;
+}
+
+.active.task {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.taskButton-container {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.taskButton-container.edits {
+    width: 90px;
+    height: 50px;
+}
+
+.check-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-weight: 800;
+    font-family: system-ui;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.nottag {
+    color: red;
+}
+
+
+.active.nottag {
+    display: block;
+}
+
+@media (max-width: 850px) {
+
+    .main-section {
+        max-width: 500px;
+        min-width: 0;
+    }
+
+    .task-container .task {
+        max-width: 130px;
+        margin-right: 5px;
+    }
+}

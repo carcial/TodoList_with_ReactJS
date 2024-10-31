@@ -152,10 +152,12 @@ export default function Body() {
                         value={toDoTask}
                         placeholder="type your todo..."
                         onChange={handleOnchange}
-                        onKeyDown={addTaskWithKeyEnter}></input>
+                        onKeyDown={addTaskWithKeyEnter} />
                     <button type='button'
                         className='add-button'
-                        onClick={addTask} >Add Task</button>
+                        onClick={addTask} >
+                        Add Task
+                    </button>
                 </section>
 
                 <section className='selectAll-container'>

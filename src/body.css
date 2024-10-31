@@ -19,39 +19,68 @@ body {
     min-height: auto;
     background-color: white;
     margin-top: 120px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.add-button {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 0 10px 0 10px;
-    background-image: linear-gradient(to right top, rgb(54, 54, 233), rgb(226, 24, 24));
-    background-size: 400%;
-    color: rgb(247, 240, 240);
-    border-radius: 18px;
-    border: none;
-    cursor: pointer;
-    width: 105px;
+    border-radius: 12px;
 }
 
 .input-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    /* Light background for a clean look */
+    border-radius: 8px;
+    /* Soft rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    /* Centered with responsive margin */
 }
 
 input {
-    width: 80%;
+    flex: 1;
     padding: 10px;
     outline: none;
-    border-radius: 18px;
-    border: 1px solid gray;
-    font-weight: 100;
-    margin-right: 10px;
+    border: 1px solid #ccc;
+    /* Light border for a clean look */
+    border-radius: 5px;
+    font-size: 15px;
+    color: #333;
+    transition: border-color 0.3s;
 }
+
+input:focus {
+    border-color: #0073e6;
+    /* Subtle highlight on focus */
+}
+
+.add-button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 16px;
+    background-color: #0073e6;
+    /* Professional blue for action button */
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-button:hover {
+    background-color: #005bb5;
+    /* Slightly darker blue on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    /* Hover shadow for emphasis */
+}
+
 
 .task .edit-input {
     font-family: cursive;
@@ -69,28 +98,53 @@ input {
 .select-button {
     font-size: 15px;
     font-weight: bold;
-    padding: 0 10px 0 10px;
-    background-image: linear-gradient(to right top, rgb(7, 130, 55), rgb(92, 5, 5));
-    background-size: 400%;
-    color: rgb(247, 240, 240);
-    border-radius: 25px;
-    border: none;
+    padding: 8px 12px;
+    background-color: white;
+    color: #333;
+    /* Dark text color for contrast */
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 5px;
     cursor: pointer;
     width: 105px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth hover effect */
+}
+
+.select-button:hover {
+    background-color: #f8f8f8;
+    /* Light gray on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    /* Slightly deeper shadow on hover */
 }
 
 .deleteAll-selected {
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 10px 5px 10px;
-    background-image: linear-gradient(to right top, rgb(148, 12, 66), rgb(226, 24, 24));
-    background-size: 400%;
-    color: rgb(247, 240, 240);
-    border-radius: 25px;
-    border: none;
+    padding: 8px 16px;
+    background-color: red;
+    color: #f7f0f0;
+    /* Soft white text */
+    border: 1px solid transparent;
+    /* No visible border initially */
+    border-radius: 8px;
+    /* Slightly rounded corners */
     cursor: pointer;
-    width: 105px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
 }
+
+.deleteAll-selected:hover {
+    background-color: #cc0000;
+    /* Darker red on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
 
 .display-container {
     margin: 15px;
@@ -121,7 +175,7 @@ input {
 }
 
 .task-container .task {
-    font-family: cursive;
+    font-family: system-ui;
     overflow-wrap: break-word;
     max-width: 300px;
 }
@@ -145,7 +199,6 @@ input {
 
 .check-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -153,6 +206,7 @@ input {
 label {
     font-weight: 800;
     font-family: system-ui;
+    margin-right: 4px;
 }
 
 .check {

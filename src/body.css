@@ -32,16 +32,16 @@ body {
     align-items: center;
     padding: 12px;
     background-color: #f9f9f9;
-    /* Light background for a clean look */
+
     border-radius: 8px;
-    /* Soft rounded corners */
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+
     gap: 10px;
     width: 100%;
     max-width: 600px;
     margin: 20px auto;
-    /* Centered with responsive margin */
+
 }
 
 input {
@@ -49,7 +49,7 @@ input {
     padding: 10px;
     outline: none;
     border: 1px solid #ccc;
-    /* Light border for a clean look */
+
     border-radius: 5px;
     font-size: 15px;
     color: #333;
@@ -58,7 +58,7 @@ input {
 
 input:focus {
     border-color: #0073e6;
-    /* Subtle highlight on focus */
+
 }
 
 .add-button {
@@ -66,7 +66,7 @@ input:focus {
     font-weight: bold;
     padding: 10px 16px;
     background-color: #0073e6;
-    /* Professional blue for action button */
+
     color: #ffffff;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -76,9 +76,9 @@ input:focus {
 
 .add-button:hover {
     background-color: #005bb5;
-    /* Slightly darker blue on hover */
+
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    /* Hover shadow for emphasis */
+
 }
 
 
@@ -101,23 +101,23 @@ input:focus {
     padding: 8px 12px;
     background-color: white;
     color: #333;
-    /* Dark text color for contrast */
+
     border: 1px solid #ddd;
-    /* Light gray border */
+
     border-radius: 5px;
     cursor: pointer;
     width: 105px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+
     transition: background-color 0.3s, box-shadow 0.3s;
-    /* Smooth hover effect */
+
 }
 
 .select-button:hover {
     background-color: #f8f8f8;
-    /* Light gray on hover */
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    /* Slightly deeper shadow on hover */
+
 }
 
 .deleteAll-selected {
@@ -126,23 +126,23 @@ input:focus {
     padding: 8px 16px;
     background-color: red;
     color: #f7f0f0;
-    /* Soft white text */
+
     border: 1px solid transparent;
-    /* No visible border initially */
+
     border-radius: 8px;
-    /* Slightly rounded corners */
+
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+
     transition: background-color 0.3s, box-shadow 0.3s;
-    /* Smooth transition */
+
 }
 
 .deleteAll-selected:hover {
     background-color: #cc0000;
-    /* Darker red on hover */
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    /* Enhanced shadow on hover */
+
 }
 
 

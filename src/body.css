@@ -83,7 +83,7 @@ input:focus {
 
 
 .task .edit-input {
-    font-family: cursive;
+    font-family: system-ui;
     color: black;
     border: 1px solid blue;
     border-radius: 0px;
